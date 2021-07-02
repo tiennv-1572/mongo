@@ -1,4 +1,5 @@
-use gmt
+conn = new Mongo();
+db = conn.getDB('gmt')
 db.createUser({
     user: 'admin',
     pwd: 'admin',
